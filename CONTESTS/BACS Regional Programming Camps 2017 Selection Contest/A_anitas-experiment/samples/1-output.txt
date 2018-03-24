@@ -1,0 +1,4 @@
+allGoodDays
+allBadDays
+none
+3
