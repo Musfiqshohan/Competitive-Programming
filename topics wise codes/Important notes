@@ -1,0 +1,2 @@
+*** Dont write:
+ll mod=10000000  outside int main

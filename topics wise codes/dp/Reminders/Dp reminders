@@ -1,0 +1,2 @@
+1. When calling the dp function for a specific state, try
+to reduce that call if possible by looking at the values of the states, other wise it may cause memory limit. maybe for stack overflow.

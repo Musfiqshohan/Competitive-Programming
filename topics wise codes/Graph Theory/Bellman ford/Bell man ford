@@ -1,0 +1,11 @@
+*****TopCoder*********	
+##  https://apps.topcoder.com/forums/?module=Thread&threadID=671406&start=0  ##
+Main algorithm: Key concept of the algorithm is that, if there are n nodes in a graph then we do not require more than n-1 edges in the shortest path from one node to another. The idea is, there can be atmost n nodes in the path, because if there are more than n nodes then that means we visited a node twice forming cycle. Removing the cycle we get smaller path. So a smallest path has atmost n nodes or atmost n-1 edges. But what happens if there is a negative cycle? But here we assumed that the cycle cost is non-negative. If the cycle is negative then in the next iteration cost of some node will change. So this is the way to detect negative cycle in the graph.
+
+If we think a bit, we will understand that, after the i'th iteration of the external for loop, the shortest path which uses atmost i edges from source will be found for sure. So in the next iteration we will find the shortest path that uses atmost i+1 edges. Even if the edges are ordered in proper way then we could find the shortest path to all other nodes in a single iteration. Then keep iterating for n-2 times more is just wastage of time. So here we can improve our algorithm: if at any iteration there is no update in the shortest path of any other nodes then we should terminate iteration. 
+
+
+
+****My Experiences*********
+1. when the last loop which chekcs if there is a negative cycle , then update the distances also.
+2. 	

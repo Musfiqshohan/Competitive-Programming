@@ -1,0 +1,3 @@
+always use return 0 and type casting
+cz your compiler and oj's compiler are not same
+CDB corrects it automatically

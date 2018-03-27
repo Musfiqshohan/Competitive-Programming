@@ -1,0 +1,4 @@
+;i<=sqrt(n+1);
+here we should not compare int with double always
+so 
+i*i<=n
